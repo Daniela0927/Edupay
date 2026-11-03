@@ -1,0 +1,18 @@
+EduPay - como obtener el APK
+=============================
+Hay dos proyectos (son dos versiones distintas de la app):
+  EduPay-WebView : envuelve tu index_EduPay.html (diseno web, retos, simulador en COP, modo oscuro).
+  EduPay-Nativo  : tu proyecto Kotlin/Compose del ZIP (recomendador de retos, XP, insignias).
+
+Opcion A - Android Studio (PC)
+  1. Instala Android Studio.  2. File > Open > elige la carpeta del proyecto.
+  3. Espera la sincronizacion de Gradle.  4. Build > Build APK(s).
+  El APK queda en app/build/outputs/apk/debug/app-debug.apk
+
+Opcion B - GitHub (sin instalar nada)
+  1. Crea un repositorio y sube el CONTENIDO de la carpeta del proyecto (incluida .github).
+  2. Pestana Actions > "Build APK" > Run workflow.
+  3. Al terminar, descarga el artefacto "EduPay-apk".
+
+El APK es de depuracion (firmado con clave debug): se instala en tu telefono
+activando "instalar apps desconocidas". Para Play Store hace falta un build release firmado.
